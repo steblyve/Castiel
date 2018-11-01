@@ -1,9 +1,14 @@
+package test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import main.Interaction;
+import main.Item;
+import main.Locker;
 
 class LockerTest {
 
@@ -27,7 +32,6 @@ class LockerTest {
 	private Item itemInLocker;
 	private Item neededKey;
 	private Interaction unlockInteraction;
-	private Interaction keyNeededInteraction;
 	private ArrayList<Interaction> generalInteractions = new ArrayList<>();
 	private String unlockRepsonse = "you open the safe and find a diamond";
 	private String keyNeededResponse = "you need a key to open this safe";
@@ -39,18 +43,18 @@ class LockerTest {
 		itemInLocker = new Item("cristal", null);
 		neededKey = new Item("key", null);
 		unlockInteraction = new Interaction(unlockRepsonse, possibleInputOpenInteractions);
-		keyNeededInteraction = new Interaction(keyNeededResponse, possibleInputOpenInteractions);
 		Interaction lookAtInteraction = new Interaction(lookAtResponse, possibleInputLooking);
 		generalInteractions.add(lookAtInteraction);
 		inventory = new ArrayList<>();
-		locker = new Locker(descriptions, neededKey, itemInLocker, unlockInteraction, keyNeededInteraction, generalInteractions);
+		locker = new Locker(descriptions, neededKey, itemInLocker, unlockInteraction,keyNeededResponse , generalInteractions);
 	}
 	
 	@Test
 	void interactTest_Open_NoKey() {
 		String response = locker.interact(possibleInputOpenInteractions.get(0), inventory);
 		assertTrue(response.equals(keyNeededResponse));
-		assertTrue(locker.CollectItem() == null);
+		assertTrue(inventory.isEmpty());
+		assertTrue(inventory.isEmpty());
 	}
 
 	@Test
@@ -58,13 +62,13 @@ class LockerTest {
 		inventory.add(neededKey);
 		String response = locker.interact(possibleInputOpenInteractions.get(0), inventory);
 		assertTrue(response.equals(unlockRepsonse));
-		assertTrue(locker.CollectItem().equals(itemInLocker));
+		assertTrue(inventory.size() == 2);
 	}
 	
 	@Test
 	void interactTest_LookAt() {
 		String response = locker.interact(possibleInputLooking.get(0), inventory);
 		assertTrue(response.equals(lookAtResponse));
-		assertTrue(locker.CollectItem() == null);
+		assertTrue(inventory.isEmpty());
 	}
 }

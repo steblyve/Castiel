@@ -1,3 +1,4 @@
+package main;
 import java.util.ArrayList;
 
 public class Container extends Interactable {
@@ -5,11 +6,11 @@ public class Container extends Interactable {
 	private Item itemInContainer;
 	private Interaction interactionToGetItem;
 
-	public Container(ArrayList<String> namesOfobject, Item itemInContainer, Interaction getItemInteraction,
+	public Container(ArrayList<String> validNamesForContainer, Item itemInContainer, Interaction getItemInteraction,
 			ArrayList<Interaction> generalInteractions) {
 		this.generalInteractions = generalInteractions;
 		this.itemInContainer = itemInContainer;
-		this.validNamesForInteractable = namesOfobject;
+		this.validNamesForInteractable = validNamesForContainer;
 		this.interactionToGetItem = getItemInteraction;
 	}
 
