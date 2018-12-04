@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<room>
+	<EnterResponse>You open the Archive door. Time for some reading!
+	</EnterResponse>
+	<Description>
+		The archive has some shelfs with a lot of books in it.
+		At
+		the end of the room there is a lone table.
+		A candle is glowing on top
+		of the table.
+		Someone has been here a few minutes ago.
+		and he left in a
+		hurry.
+	</Description>
+
+	<Decoration>
+		<names>
+			desk,table
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				A normal table with some Documents on top of it.
+				The many
+				used candles on top indicate that it has been used frequently.
+				the
+				table also has a drawer.
+			</response>
+
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			candle,light,flame
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				The weak flames of the candle are kinda relaxing.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			documents,papers,paper
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				You check the documents.
+				Some notes about acient
+				civilizations and there connection to god.
+				you can barly read the
+				hand writing.
+				The word "void" is all over the documents.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			books,shelf,archive
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				To many folders to read. It is mostly inrelevant stuff
+				anyway.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Container>
+		<names>
+			drawer
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				a simple Drawer.
+			</response>
+		</Interactions>
+		<GetItemInteraction>
+			<inputword>
+				open,look inside
+			</inputword>
+			<response>
+				Some papers and a key. "Labor"
+				obtained Labor Key
+			</response>
+		</GetItemInteraction>
+		<ItemID>
+			laborKey
+		</ItemID>
+	</Container>
+
+	<Door>
+		<names>
+			door,hallway
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				An stable wooden door.
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open
+			</inputword>
+			<response>
+				you walk outside into the Hallway.
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+			</inputword>
+			<response>
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+		</NoKeyResponse>
+		<KeyID>
+		</KeyID>
+	</Door>
+</room>

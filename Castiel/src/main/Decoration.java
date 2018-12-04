@@ -2,10 +2,10 @@ package main;
 import java.util.ArrayList;
 
 public class Decoration extends Interactable{
-
-	public Decoration(ArrayList<String> validNamesForDecoration, ArrayList<Interaction> generalInteractions) {
-		this.generalInteractions = generalInteractions;
-		this.validNamesForInteractable = validNamesForDecoration;
+	
+	public Decoration(ArrayList<String> namesForObject, ArrayList<Interaction> interactions) {
+		this.generalInteractions = interactions;
+		this.namesForObject = namesForObject;
 	}
 	
 	@Override

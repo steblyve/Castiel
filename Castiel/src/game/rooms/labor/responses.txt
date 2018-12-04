@@ -1,0 +1,52 @@
+#roomDescription:
+As soon as you enter the room a disgusting smell of death and blood enters your nose.
+The room has no windows nor Doors. It is a surgery room with a surgery
+table in the middle. A body is on the table.
+At the end of the Room there is a PC mounted on a wall.
+At the side there is a shelf.
+
+#inspectDoor:
+a Door to the Hallway.
+
+#inspectTable:
+A crippeld body is on top of it in such a bad state that you cant figure out
+if it was human or not. 
+
+#inspectShelf:
+Some surgery documents are in the shelf.
+
+#noKeyPC:
+The PC is password locked i will need the password to log in.
+
+#inspectPC:
+You log into the PC and search for anything usefull. You find some logs from the 
+person working here: 
+"log 3" east states .... found it .. can now continue ....
+"log 5" ... reality .. reveal .. truth...
+you need the password to get more data out of it 
+
+#loginPC:
+You log into the PC.
+
+#inspectDocuments:
+Some photos of a man standing in many different places around the world.
+Befor the Piramids in keiro and in venedig. Some of these photos are still black white.
+Strangly the person on the pictures does not seem to age at all.
+
+#inspectStone:
+A weird looking stone glowing slightly red. about 1m in hight. You feel a strange Energy 
+comming from it.
+
+#takeStone:
+To heavy. but i can touch it.
+
+#touchStone:
+As you touch the stone the red glow gets stronger. you see the memories of an acient 
+civilisation passing trough you mind. You see parts of the past and future. 
+It is almost as you would watch trough the eyes of someone else. 
+With a bright light you get pushed back. Your head hurts.
+
+#inspectBody:
+A bloody mess of an corpse. You cant make out who it is nor if it was even human.
+A long scar is going over the stomache of the corpse.
+ 

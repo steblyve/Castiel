@@ -1,0 +1,13 @@
+chair:chair
+picture:frame,picture,painting
+documents:documents,papers,document
+plant:plant
+door:door
+desk:desk,table
+window:window,fenster,outside
+shelf:bookshelf,shelf
+books:books
+bookBable:babel,bable
+bookBlack:black,blackknight,knight 
+bookStories:stories,britanian
+drawer:drawer,locked-drawer

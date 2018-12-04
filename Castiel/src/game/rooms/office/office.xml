@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<room>
+	<EnterResponse>You walk inside the office.</EnterResponse>
+	<Description>
+		You are in an office.
+		There is a table in the middle.
+		In the
+		corner there is an office plant and at the wall there is a
+		book-shelf.
+		There is only one door at the end of the room behind the table
+		Some
+		sunlight comes into the room trough two windows
+		The light is slightly
+		red.
+	</Description>
+
+	<Decoration>
+		<names>
+			desk,table
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				A wooden desk with fine metal carvings on the side. There
+				is a name written in it Mathew Smith
+				sounds familiar The desk has a
+				locked drawer. On top there is a framed picture and some documents
+			</response>
+
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			chair,officechair
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				A well made chair out of wood. But there is nothing special
+				about
+				it.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				stand,climb,jump
+			</inputword>
+			<response>
+				I climb the chair. The air is nice up here but its
+				not
+				helping at all so climb down again.
+
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			documents,papers,document
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				"You search the papers on top of the desk."
+				They look like
+				some research papers. You can barley read the hand
+				writing."
+				Something about medical stuff. The person working here must be a
+				doctor."
+				On the side of the table you find a little note
+				lisa my dear
+				the key is behind the plant in case i forget to look the door again
+				thanks for your help. sincere Dr. Smith
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			bookshelf,shelf
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				Some books are in it.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			books
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				"The destruction of babel" documentation of an old
+				civilisation.
+				"Old Britania stories" fables and stories from old
+				England.
+				"The Black Knight" nothing but a scratch
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			babel,bable
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				The acient civilization of Bable is well known for there
+				atempt to reach heaven
+				by building a tower higher than any
+				other.Acording to the Bible the
+				tower was an
+				statement from the humans
+				to god that they want to reach his greatnes by
+				reaching
+				heaven
+				themself. God saw th faith of the humans in danger and brought
+				destruction
+				over the people as a grim reminder of to the people. The
+				tower broke
+				down and god
+				createt language. The acient civilisations
+				could not communicate with each
+				other
+				and so they parted ways with no
+				means to rebuild the tower ever again.
+				Parts of the mentioned tower
+				where found in east european country
+				indicating
+				that the tower really
+				existet. But not close to as high as descripted in
+				the bible.
+				Strange.Some pages seem to be missing.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			stories,britanian
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				King arthur holder of excalibure and truet heighr to the
+				thrown of
+				Britania road
+				allongside his Knights inside battle. He
+				fought Battle over Battle to conquer
+				the Land and unite the people
+				under the glorious banner of freedom
+				for them to be
+				free for all
+				time...
+				Sounds like a cool dude.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			black,blackknight,knight
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				The black kinght cant be defeated by any means then he is indeed
+				imortal and any
+				wound given to him is nothing but a fleshwound.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Container>
+		<names>
+			plant
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				A office plant. Half the size of you. It didnt get water in
+				some time
+				it seems.
+			</response>
+		</Interactions>
+		<GetItemInteraction>
+			<inputword>
+				get key,pick up key,take key,look behind,look under,check
+				under
+			</inputword>
+			<response>
+				You look behind the plant and find a Key hidden in it
+				not a
+				really safe hiding spot to be honest.
+				obtained OfficeKey
+			</response>
+		</GetItemInteraction>
+		<ItemID>
+			officeKey
+		</ItemID>
+	</Container>
+
+	<Door>
+		<names>
+			door,hallway
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				An stable wooden door. Like the table it has metal carvings
+				on the
+				sides.
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open
+			</inputword>
+			<response>
+				you walk outside into the Hallway.
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+				unlock,open
+			</inputword>
+			<response>
+				you use the key to unlock the door
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+			The Door does not open. Seems to be locked. I need to
+			find another way or get the key.
+		</NoKeyResponse>
+		<KeyID>
+			officeKey
+		</KeyID>
+	</Door>
+
+	<Container>
+		<names>
+			frame,picture,painting
+		</names>
+		<Interactions>
+			<inputword>
+				take,get
+			</inputword>
+			<response>
+				you dont see a reason to take the picture with you.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				It is a picture of a Familiy
+				A man his wife and a little kid
+				in the middle. They look happy.
+			</response>
+		</Interactions>
+		<GetItemInteraction>
+			<inputword>
+				open,check frame,remove back,smash,destroy,inspect back
+			</inputword>
+			<response>
+				You check the back of the picture.
+				The frame seems lose. You
+				remove it and find a key in it.
+				obtained;
+				Window key
+			</response>
+		</GetItemInteraction>
+		<ItemID>
+			windowKey
+		</ItemID>
+	</Container>
+
+	<Door>
+		<names>
+			window,fenster,outside
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				You look outsie the window. No human to be seen. Everything
+				looks empty
+				and abadoned.
+				You see some trees and far away you spot a
+				litle town connected to your
+				building
+				by a singel road.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				smash,destroy,break
+			</inputword>
+			<response>
+				You look outsie the window. No human to be seen. Everything
+				looks empty
+				and abadoned.
+				You see some trees and far away you spot a
+				litle town connected to your
+				building
+				by a singel road.
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open
+			</inputword>
+			<response>
+				You climb trough the window. its cold outside.
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+				unlock,open
+			</inputword>
+			<response>
+				You use the Windowkey to unlock the window.
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+			The window is locked. I cant open it.
+		</NoKeyResponse>
+		<KeyID>
+			officeKey
+		</KeyID>
+	</Door>
+	<Locker>
+		<names>drawer,locked-drawer</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>A small drawer under the table. Stable but nothing special.
+			</response>
+		</Interactions>
+		<UnlockInteraction>
+			<inputword>
+				unlock,open
+			</inputword>
+			<response>You slowly open the drawer. Inside you find something that
+				looks like an really
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>The drawer is locked.</NoKeyResponse>
+		<KeyID>drawerKey</KeyID>
+		<ItemID>ritualDagger</ItemID>
+	</Locker>
+</room>

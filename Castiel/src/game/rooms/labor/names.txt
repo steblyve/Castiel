@@ -1,0 +1,7 @@
+door:door,back,hallway
+table:labortable,table,desk
+shelf:shelf,book-shelf
+computer:pc,computer
+documents:papers,documents,document
+ritualStone:stone,ritualstone,ritual
+body:body,person,corpse

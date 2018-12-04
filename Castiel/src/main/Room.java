@@ -6,7 +6,39 @@ public class Room {
 	
 	ArrayList<Interactable> objectsInRoom = new ArrayList<>();
 	
-	public Room() {
+	private String roomDescription;
+	private ObjectParser objectParser = new ObjectParser();
+	private String responseToEnterRoom;
+	
+	public Room(ArrayList<Interactable> objectsInRoom, String roomDescription, String responseToEnterRoom) {
+		this.objectsInRoom = objectsInRoom;
+		this.roomDescription = roomDescription;
+		this.responseToEnterRoom = responseToEnterRoom;
+	}	
+	
+	public String interact(String input, ArrayList<Item> inventory) {
 		
+		if(input.contains("look around")) {
+			return roomDescription;
+		}
+		
+		Interactable interactable = objectParser.findSelectedObject(input, objectsInRoom);
+		if(interactable == null) {
+			return null;
+		}
+		
+		String response = interactable.interact(input, inventory);
+		return response;
+	}
+	
+	public String getRoomDescription() {
+		return roomDescription;
+	}
+	
+	public Boolean enteredRoom(String response) {
+		if(response.replace("\n", "").equals(responseToEnterRoom.replace("\n", "").replace("\r", ""))) {
+			return true;
+		}
+		return false;
 	}
 }

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<room>
+	<EnterResponse>You open the Labor door and walk trough it. Was that a
+		mistake?
+	</EnterResponse>
+	<Description>
+		As soon as you enter the room a disgusting smell of death
+		and blood
+		enters your nose.
+		The room has no windows nor Doors. It is a
+		surgery room with a surgery
+		table in the middle. A body is on the
+		table.
+		At the end of the Room there is a PC mounted on a wall.
+		At the
+		side there is a shelf.
+	</Description>
+
+	<Decoration>
+		<names>
+			labortable,table,desk
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				A crippeld body is on top of it in such a bad state that
+				you cant
+				figure out
+				if it was human or not.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			shelf,book-shelf
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				Some surgery documents are in the shelf.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			pc,computer
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				You log into the PC and search for anything usefull. You
+				find some logs
+				from the
+				person working here:
+				"log 3" east states ....
+				found it .. can now continue ....
+				"log 5" ... reality .. reveal ..
+				truth...
+				you need the password to get more data out of it
+			</response>
+		</Interactions>
+
+		<Interactions>
+			<inputword>
+				2845
+			</inputword>
+			<response>
+				you enter the password for the pc and look up the missing
+				logs:
+				log 16: "he warned me. i didnt listen. he offers the truth but
+				the price
+				is to high"
+				log 17: "its just a game.. time to end it"
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			papers,documents,document
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				Some photos of a man standing in many different places
+				around the world.
+				Befor the Piramids in keiro and in venedig. Some of
+				these photos are
+				still black white.
+				Strangly the person on the
+				pictures does not seem to age at all.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			stone,ritualstone,ritual
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				A weird looking stone glowing slightly red. about 1m in
+				hight. You feel a strange Energy
+				comming from it.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				touch,hit,grab
+			</inputword>
+			<response>
+				As you touch the stone the red glow gets stronger. you see
+				the memories of an acient
+				civilisation passing trough you mind. You
+				see parts of the past and future.
+				It is almost as you would watch
+				trough the eyes of someone else.
+				With a bright light you get pushed
+				back. Your head hurts.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				take,get,pick up,pick
+			</inputword>
+			<response>
+				To heavy. but i can touch it.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			body,person,corpse
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				A bloody mess of an corpse. You cant make out who it is nor if it was
+				even human.
+				A long scar is going over the stomache of the corpse.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Door>
+		<names>
+			door,hallway
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				An stable wooden door.
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open
+			</inputword>
+			<response>
+				you walk outside into the Hallway.
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+			</inputword>
+			<response>
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+		</NoKeyResponse>
+		<KeyID>
+		</KeyID>
+	</Door>
+</room>

@@ -1,0 +1,12 @@
+inspecting:look,check,inspect,search
+climb:stand,climb,jump
+pickingUpKey:get key,pick up key,take key,look behind,look under,check under
+pass:pass,use,walk,go,open
+unlock:unlock,open
+smash:smash,destroy,break
+read:look,check,inspect,read
+lookBehind:look behind,check behind
+lookUnder:look under, check under
+open:open,look inside
+forceOpen:break,kick,destroy,beat
+openback:open,check frame,remove back,smash,destroy,inspect back
