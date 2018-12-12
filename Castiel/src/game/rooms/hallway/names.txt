@@ -1,6 +1,0 @@
-desk:desk,table
-officeDoor:office door,office
-archiveDoor:archive door,archive
-laborDoor:labor door,labor
-mirror:mirror
-stairs:stairs,stair

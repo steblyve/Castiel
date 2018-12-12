@@ -25,14 +25,18 @@ public class Door extends Interactable {
 
 	@Override
 	public String interact(String input, ArrayList<Item> inventory) {
-
+		
+		boolean wantedToPassDoor = false;
+		
 		// go trough door
 		String response = passDoorInteraction.execute(input);
 		if (response != null) {
 			if (isLocked == false) {
 				return response;
-			} else {
-				return noKeyResponse;
+			}
+			//set flag that we allready have a possible response
+			else {
+				wantedToPassDoor = true;
 			}
 		}
 
@@ -47,10 +51,14 @@ public class Door extends Interactable {
 
 			// opening door but not the right key
 			if (isLocked && !rightKeyInInventory(inventory, keyToOpenDoor) && response != null) {
-				return noKeyResponse;
+				return this.noKeyResponse;
 			}
-		}
+		}	
 
+		if(wantedToPassDoor) {
+			return noKeyResponse;
+		}
+		
 		return this.tryAllgeneralInteractions(input);
 	}
 

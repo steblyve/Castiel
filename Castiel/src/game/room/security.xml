@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<room>
+	<EnterResponse>
+		You open the door to the security room.
+	</EnterResponse>
+	<Description>
+		It is a small chamber with a chair and some monitors with
+		camera footage on them.
+		I the back there is also a shelf with some keys
+		in it.
+	</Description>
+
+	<Container>
+		<names>
+			shelf,keys
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				only one key is left. The key for the entrance door.
+			</response>
+		</Interactions>
+		<GetItemInteraction>
+			<inputword>
+				get key,get,open,take,
+			</inputword>
+			<response>
+				you obtained the entrance key.
+			</response>
+		</GetItemInteraction>
+		<ItemID>
+			entranceKey
+		</ItemID>
+	</Container>
+
+	<Decoration>
+		<names>
+			display,monitor,monitors
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				You check the old security recordings of the System. You see people walking in and out. 
+				One of these people is you. You also see the secretary entering the password for there pc: 
+				it is 8888.
+			</response>
+		</Interactions>
+	</Decoration>
+	
+		<Decoration>
+		<names>
+			chair	
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				Its a god damn chair. Nothing else.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Door>
+		<names>
+			door,entrance,back
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				the door back to the entrance.
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open
+			</inputword>
+			<response>
+				You walk to the entrace.
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+			</inputword>
+			<response>
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+		</NoKeyResponse>
+		<KeyID>
+		</KeyID>
+	</Door>
+</room>

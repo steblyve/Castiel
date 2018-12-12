@@ -4,13 +4,10 @@
 	</EnterResponse>
 	<Description>
 		The archive has some shelfs with a lot of books in it.
-		At
-		the end of the room there is a lone table.
-		A candle is glowing on top
-		of the table.
+		At the end of the room there is a lone table.
+		A candle is glowing on top of the table.
 		Someone has been here a few minutes ago.
-		and he left in a
-		hurry.
+		and he left in a hurry.
 	</Description>
 
 	<Decoration>
@@ -19,7 +16,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				A normal table with some Documents on top of it.
@@ -38,7 +35,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				llook,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				The weak flames of the candle are kinda relaxing.
@@ -52,7 +49,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				You check the documents.

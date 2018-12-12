@@ -9,18 +9,31 @@ import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
+/**
+ * Manager for the gamesound. Can play a writing sound and also start a RoomSound.
+ * @author Yves
+ * @version 1.0
+ */
 public class gameSound {
 
 	private Clip writingclip;
 	
 	private Clip roomClip;
 	
+	/**
+	 * Constructor creating Clips for further use.
+	 * @throws LineUnavailableException
+	 */
 	public gameSound() throws LineUnavailableException {
 		writingclip = AudioSystem.getClip();
 		roomClip = AudioSystem.getClip();
 	}
 
-	public void playWritingSound() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
+	/**
+	 * 
+	 * @throws Exception
+	 */
+	public void playWritingSound() throws Exception {
 		if(!writingclip.isActive()) {
 			writingclip = AudioSystem.getClip();
 			InputStream reader = getClass().getResourceAsStream("/game/gameFiles/writing.wav");
@@ -29,8 +42,13 @@ public class gameSound {
 			writingclip.start();
 		}
 	}
-	
-	public void startRoomSound(String path) throws LineUnavailableException, UnsupportedAudioFileException, IOException, InterruptedException {
+
+	/**
+	 * 
+	 * @param path
+	 * @throws Exception
+	 */
+	public void startRoomSound(String path) throws Exception {
 		roomClip.stop();
 		roomClip = AudioSystem.getClip();
 		InputStream reader = getClass().getResourceAsStream("/game/gameFiles/" + path);

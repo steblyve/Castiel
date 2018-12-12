@@ -36,7 +36,7 @@ public class Room {
 	}
 	
 	public Boolean enteredRoom(String response) {
-		if(response.replace("\n", "").equals(responseToEnterRoom.replace("\n", "").replace("\r", ""))) {
+		if(response.replace("\n", "").replace("\t", "").replace("\r", "").equals(responseToEnterRoom.replace("\n", "").replace("\t", "").replace("\r", ""))) {
 			return true;
 		}
 		return false;

@@ -12,7 +12,7 @@ public class ObjectParser {
 		String[] words = input.split(" ");
 		for(String word : words) {
 			for(Interactable interactable : interactables) {
-				if(interactable.namesForObject.contains(word)) {
+				if(interactable != null && interactable.namesForObject.contains(word)) {
 					return interactable;
 				}
 			}

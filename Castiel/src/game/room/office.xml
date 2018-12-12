@@ -20,7 +20,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				A wooden desk with fine metal carvings on the side. There
@@ -28,7 +28,23 @@
 				sounds familiar The desk has a
 				locked drawer. On top there is a framed picture and some documents
 			</response>
-
+		</Interactions>
+		<Interactions>
+			<inputword>
+				smash,destroy,break,kick,
+			</inputword>
+			<response>
+				You hit it. nothing happens.. what a shame.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				stand,climb,jump
+			</inputword>
+			<response>
+				I climb the desk. The air is nice up here but its not
+				helping at all so climb down again.
+			</response>
 		</Interactions>
 	</Decoration>
 
@@ -38,12 +54,27 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				A well made chair out of wood. But there is nothing special
-				about
-				it.
+				about it.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				pick,take,move around
+			</inputword>
+			<response>
+				Taking a chair with me wont help me at all.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				smash,destroy,break,throw
+			</inputword>
+			<response>
+				nope forget about that idea.
 			</response>
 		</Interactions>
 		<Interactions>
@@ -51,10 +82,8 @@
 				stand,climb,jump
 			</inputword>
 			<response>
-				I climb the chair. The air is nice up here but its
-				not
+				I climb the chair. The air is nice up here but its not
 				helping at all so climb down again.
-
 			</response>
 		</Interactions>
 	</Decoration>
@@ -88,7 +117,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				Some books are in it.
@@ -98,8 +127,25 @@
 
 	<Decoration>
 		<names>
-			books
+			books,book
 		</names>
+		<Interactions>
+			<inputword>
+				smash,destroy,break
+			</inputword>
+			<response>
+				You hit it. nothing happens.. what a shame.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				throw
+			</inputword>
+			<response>
+				you throw the book. It bounces of and hits your head...
+				Idiot
+			</response>
+		</Interactions>
 		<Interactions>
 			<inputword>
 				look,check,inspect,search
@@ -186,7 +232,8 @@
 				look,check,inspect,search
 			</inputword>
 			<response>
-				The black kinght cant be defeated by any means then he is indeed
+				The black kinght cant be defeated by any means then he is
+				indeed
 				imortal and any
 				wound given to him is nothing but a fleshwound.
 			</response>
@@ -199,24 +246,21 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,walk,move
 			</inputword>
 			<response>
-				A office plant. Half the size of you. It didnt get water in
-				some time
-				it seems.
+				A office plant. Half the size of you. It didnt get water in some time it seems.
 			</response>
 		</Interactions>
 		<GetItemInteraction>
 			<inputword>
 				get key,pick up key,take key,look behind,look under,check
-				under
+				under,lift up,
 			</inputword>
 			<response>
-				You look behind the plant and find a Key hidden in it
-				not a
-				really safe hiding spot to be honest.
-				obtained OfficeKey
+				You look behind the plant and find a Key hidden in it not a
+				realy safe hiding spot. But who am i to judge.
+				obtained: "OfficeKey"
 			</response>
 		</GetItemInteraction>
 		<ItemID>
@@ -226,7 +270,7 @@
 
 	<Door>
 		<names>
-			door,hallway
+			door,hallway,back
 		</names>
 		<Interactions>
 			<inputword>
@@ -234,8 +278,15 @@
 			</inputword>
 			<response>
 				An stable wooden door. Like the table it has metal carvings
-				on the
-				sides.
+				on the sides.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				break,destroy,kick,hit
+			</inputword>
+			<response>
+				It does not move an inch. yeah fuck the metric system i know
 			</response>
 		</Interactions>
 		<PassInteraction>
@@ -325,13 +376,7 @@
 				smash,destroy,break
 			</inputword>
 			<response>
-				You look outsie the window. No human to be seen. Everything
-				looks empty
-				and abadoned.
-				You see some trees and far away you spot a
-				litle town connected to your
-				building
-				by a singel road.
+				nope forget about that idea.
 			</response>
 		</Interactions>
 		<PassInteraction>
@@ -357,25 +402,20 @@
 			officeKey
 		</KeyID>
 	</Door>
+	
 	<Locker>
 		<names>drawer,locked-drawer</names>
-		<Interactions>
-			<inputword>
-				look,check,inspect,search
-			</inputword>
-			<response>A small drawer under the table. Stable but nothing special.
-			</response>
-		</Interactions>
 		<UnlockInteraction>
 			<inputword>
-				unlock,open
+				unlock,open,search,inspect,check,look,inside
 			</inputword>
-			<response>You slowly open the drawer. Inside you find something that
-				looks like an really
+			<response>
+				You slowly open the drawer. Inside you find a knife with
+				blood on it.
 			</response>
 		</UnlockInteraction>
 		<NoKeyResponse>The drawer is locked.</NoKeyResponse>
 		<KeyID>drawerKey</KeyID>
-		<ItemID>ritualDagger</ItemID>
+		<ItemID>dagger</ItemID>
 	</Locker>
 </room>

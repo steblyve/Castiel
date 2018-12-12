@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<room>
+	<EnterResponse>you walk outside into the Hallway.</EnterResponse>
+	<Description>
+		It is kinda dark around you. No one seems to be here. It
+		is silent.
+		in the hallway there is a table with a mirror next to it.
+		In
+		the whole hallway there are only 2 other doors. They have nameplates
+		on it.
+		"labor"
+		"archive"
+		At the end of the hallway you can also see some
+		stairs going down.
+	</Description>
+
+	<Decoration>
+		<names>
+			mirror
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				you look inside the mirror. For just a second you tought
+				you saw
+				someone behind you.
+				The air just got a little colder.
+			</response>
+
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			desk,table
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				A small table next to the mirror. Wodden and wellmade.
+				It
+				looks expensive.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Door>
+		<names>
+			archive door,archive,archiv
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				a wooden door with a label on it "Archive"
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open
+			</inputword>
+			<response>
+				You open the Archive door. Time for some reading!
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+			</inputword>
+			<response>
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+		</NoKeyResponse>
+		<KeyID>
+		</KeyID>
+	</Door>
+
+	<Door>
+		<names>
+			labor door,labor
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				a wooden door with a label on it "Labor"
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open
+			</inputword>
+			<response>
+				You open the Labor door and walk trough it. Was that a
+				mistake?
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+				unlock,open
+			</inputword>
+			<response>
+				you unlock the door.
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+			the door is locked.
+		</NoKeyResponse>
+		<KeyID>
+			laborKey
+		</KeyID>
+	</Door>
+
+	<Door>
+		<names>
+			stairs,stair
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				you look at the stairs. Your feet hurt already.
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open
+			</inputword>
+			<response>
+				You walk to the entrace.
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+			</inputword>
+			<response>
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+		</NoKeyResponse>
+		<KeyID>
+		</KeyID>
+	</Door>
+
+	<Door>
+		<names>
+			office door,office
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				a wooden door with a label on it "Office"
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open
+			</inputword>
+			<response>
+				You walk inside the office.
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+			</inputword>
+			<response>
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+		</NoKeyResponse>
+		<KeyID>
+		</KeyID>
+	</Door>
+</room>

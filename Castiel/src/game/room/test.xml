@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<room>
+	<EnterResponse>test enter response</EnterResponse>
+	<Description>
+	this is a test description
+	</Description>
+
+	<Decoration>
+		<names>
+			testDecoration
+		</names>
+		<Interactions>
+			<inputword>
+				test
+			</inputword>
+			<response>
+			testResponse
+			</response>
+		</Interactions>
+	</Decoration>
+	
+	<Container>
+		<names>
+			testContainer
+		</names>
+		<Interactions>
+			<inputword>
+				test
+			</inputword>
+			<response>
+				testResponse
+			</response>
+		</Interactions>
+		
+		<GetItemInteraction>
+			<inputword>
+				getItem
+			</inputword>
+			<response>
+				getItemResponse
+			</response>
+		</GetItemInteraction>
+		<ItemID>
+			testItem
+		</ItemID>
+	</Container>
+
+	<Door>
+		<names>
+			testDoor
+		</names>
+		<Interactions>
+			<inputword>
+				test
+			</inputword>
+			<response>
+				testResponse
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass
+			</inputword>
+			<response>
+				passResponse
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+				unlock
+			</inputword>
+			<response>
+				unlockResponse
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+			testNoKey
+		</NoKeyResponse>
+		<KeyID>
+		testKey
+		</KeyID>
+	</Door>
+	
+	<Locker>
+		<names>testDrawer</names>
+		<Interactions>
+			<inputword>
+				test
+			</inputword>
+			<response>
+				testResponse
+			</response>
+		</Interactions>
+		<UnlockInteraction>
+			<inputword>
+				unlock
+			</inputword>
+			<response>
+				unlockResponse
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>testNoKey</NoKeyResponse>
+		<KeyID>testKey</KeyID>
+		<ItemID>testItem</ItemID>
+	</Locker>
+</room>

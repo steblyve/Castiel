@@ -1,7 +1,0 @@
-table:desk,table
-drawer:drawer
-candle:candle,light,flame
-documents:documents,papers,paper
-shelf:books,shelf,archive
-fan:fan system,fan,entrance
-door:door,back,hallway

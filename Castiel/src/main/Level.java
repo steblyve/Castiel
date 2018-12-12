@@ -42,4 +42,8 @@ public class Level {
 		
 		return response;
 	}
+	
+	public void setInventory(ArrayList<Item> inventory) {
+		this.inventory = inventory;
+	}
 }

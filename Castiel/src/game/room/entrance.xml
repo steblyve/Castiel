@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <room>
-	<EnterResponse>you walk outside into the Hallway.</EnterResponse>
+	<EnterResponse>You walk to the entrace.
+	</EnterResponse>
 	<Description>
-		It is kinda dark around you. No one seems to be here. It
-		is silent.
-		in the hallway there is a table with a mirror next to it.
-		In
-		the whole hallway there are only 2 other doors. They have nameplates
-		on it.
-		"labor"
-		"archive"
-		At the end of the hallway you can also see some
-		stairs going down.
+		You are in the entrance Area of the Building. A double
+		door is leading outside.
+		There is a monitor displaying "Physic
+		Institute GSTER"
+		No one is around.
+		There is another door probably leading
+		into the basement.
+		Another door is behind the entrance desk with the
+		label "security" on it.
+		In the middle of the room there is also an
+		entrance desk.
 	</Description>
 
 	<Decoration>
 		<names>
-			mirror
+			display,monitor
 		</names>
 		<Interactions>
 			<inputword>
 				look,check,inspect,search
 			</inputword>
 			<response>
-				you look inside the mirror. For just a second you tought
-				you saw
-				someone behind you.
-				The air just got a little colder.
+				"Physic Institute GSTER" hmm sounds familiar.
 			</response>
-
 		</Interactions>
 	</Decoration>
 
@@ -41,23 +39,53 @@
 				look,check,inspect,search
 			</inputword>
 			<response>
-				A small table next to the mirror. Wodden and wellmade.
-				It
-				looks expensive.
+				A normal Desk.A PC is on it.
 			</response>
 		</Interactions>
 	</Decoration>
 
-	<Door>
+	<Decoration>
 		<names>
-			archive door,archive,archiv
+			PC,Computer
 		</names>
 		<Interactions>
 			<inputword>
 				look,check,inspect,search
 			</inputword>
 			<response>
-				a wooden door with a label on it "Archive"
+				I need a password to log in..
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				8888
+			</inputword>
+			<response>
+				you log into the PC and check the files.
+				Some files are
+				formulars for deliveries made to this Institute.
+				Old stuff
+				from all
+				over the world got deliverd here.
+				You check the list of professors
+				from this university and
+				find your own face in it.
+				It seems you have
+				worked here. But why dont you have any memory of it?
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Door>
+		<names>
+			stairs,hallway,upstairs,
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				stairs again.. i hate them..
 			</response>
 		</Interactions>
 		<PassInteraction>
@@ -65,7 +93,7 @@
 				pass,use,walk,go,open
 			</inputword>
 			<response>
-				You open the Archive door. Time for some reading!
+				you walk outside into the Hallway.
 			</response>
 		</PassInteraction>
 		<UnlockInteraction>
@@ -79,17 +107,16 @@
 		<KeyID>
 		</KeyID>
 	</Door>
-
 	<Door>
 		<names>
-			labor door,labor
+			entrance,maindoor,main,double door
 		</names>
 		<Interactions>
 			<inputword>
 				look,check,inspect,search
 			</inputword>
 			<response>
-				a wooden door with a label on it "Labor"
+				big stable door with the sign of the institute on it.
 			</response>
 		</Interactions>
 		<PassInteraction>
@@ -97,8 +124,7 @@
 				pass,use,walk,go,open
 			</inputword>
 			<response>
-				You open the Labor door and walk trough it. Was that a
-				mistake?
+				You open the door to your freedom.
 			</response>
 		</PassInteraction>
 		<UnlockInteraction>
@@ -106,27 +132,28 @@
 				unlock,open
 			</inputword>
 			<response>
-				you unlock the door.
+				you unlock the door. finaly..
 			</response>
 		</UnlockInteraction>
 		<NoKeyResponse>
-			the door is locked.
+			the door is locked... you didnt think it would be so
+			easy right? ;)
 		</NoKeyResponse>
 		<KeyID>
-			laborKey
+			entranceKey
 		</KeyID>
 	</Door>
 
 	<Door>
 		<names>
-			stairs,stair
+			basement,cellar
 		</names>
 		<Interactions>
 			<inputword>
 				look,check,inspect,search
 			</inputword>
 			<response>
-				you look at the stairs. Your feet hurt already.
+				old fashioned door leading into the basement.
 			</response>
 		</Interactions>
 		<PassInteraction>
@@ -134,7 +161,7 @@
 				pass,use,walk,go,open
 			</inputword>
 			<response>
-				You walk down the stairs.
+				You walk into the dark of the basement.
 			</response>
 		</PassInteraction>
 		<UnlockInteraction>
@@ -147,18 +174,18 @@
 		</NoKeyResponse>
 		<KeyID>
 		</KeyID>
-	</Door>
 
-	<Door>
+	</Door>
+		<Door>
 		<names>
-			office door,office
+			security chamber,chamber,security
 		</names>
 		<Interactions>
 			<inputword>
 				look,check,inspect,search
 			</inputword>
 			<response>
-				a wooden door with a label on it "Office"
+				a door with the sign "security" on it.
 			</response>
 		</Interactions>
 		<PassInteraction>
@@ -166,7 +193,7 @@
 				pass,use,walk,go,open
 			</inputword>
 			<response>
-				You walk inside the office.
+				You open the door to the security room.
 			</response>
 		</PassInteraction>
 		<UnlockInteraction>
