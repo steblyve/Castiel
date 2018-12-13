@@ -2,16 +2,13 @@
 <room>
 	<EnterResponse>you walk outside into the Hallway.</EnterResponse>
 	<Description>
-		It is kinda dark around you. No one seems to be here. It
-		is silent.
-		in the hallway there is a table with a mirror next to it.
-		In
-		the whole hallway there are only 2 other doors. They have nameplates
-		on it.
+		It is kinda dark around you. No one seems to be here. It is silent. 
+		In the hallway there is a table with a mirror next to it.
+		In the whole hallway there are only 3 other doors. They have nameplates on it.
 		"labor"
 		"archive"
-		At the end of the hallway you can also see some
-		stairs going down.
+		"experiment chamber"
+		At the end of the hallway you can also see some stairs going down.
 	</Description>
 
 	<Decoration>
@@ -23,9 +20,7 @@
 				look,check,inspect,search
 			</inputword>
 			<response>
-				you look inside the mirror. For just a second you tought
-				you saw
-				someone behind you.
+				you look inside the mirror. For just a second you tought you saw someone behind you.
 				The air just got a little colder.
 			</response>
 
@@ -38,12 +33,11 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,walk,go
 			</inputword>
 			<response>
 				A small table next to the mirror. Wodden and wellmade.
-				It
-				looks expensive.
+				It looks expensive.
 			</response>
 		</Interactions>
 	</Decoration>
@@ -97,8 +91,7 @@
 				pass,use,walk,go,open
 			</inputword>
 			<response>
-				You open the Labor door and walk trough it. Was that a
-				mistake?
+				You open the Labor door and walk trough it. Was that a mistake?
 			</response>
 		</PassInteraction>
 		<UnlockInteraction>
@@ -178,6 +171,39 @@
 		<NoKeyResponse>
 		</NoKeyResponse>
 		<KeyID>
+		</KeyID>
+	</Door>
+	
+	<Door>
+		<names>
+			experminent,chamber,experiment chamber,experiment-chamber
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				a wooden door with a label on it "experiment chamber"
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open
+			</inputword>
+			<response>
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+			</inputword>
+			<response>
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+		It is locked
+		</NoKeyResponse>
+		<KeyID>
+		experimentChamberKey
 		</KeyID>
 	</Door>
 </room>

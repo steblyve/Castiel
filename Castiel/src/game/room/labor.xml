@@ -4,31 +4,24 @@
 		mistake?
 	</EnterResponse>
 	<Description>
-		As soon as you enter the room a disgusting smell of death
-		and blood
-		enters your nose.
-		The room has no windows nor Doors. It is a
-		surgery room with a surgery
-		table in the middle. A body is on the
-		table.
+		As soon as you enter the room a disgusting smell of death and blood enters your nose.
+		The room has no windows nor Doors. It is a surgery room with a surgery table in the middle.
+		A body is on the table.
 		At the end of the Room there is a PC mounted on a wall.
-		At the
-		side there is a shelf.
+		At the side there is a shelf.
 	</Description>
 
 	<Decoration>
 		<names>
-			labortable,table,desk
+			labortable,table,desk,labor-table
 		</names>
 		<Interactions>
 			<inputword>
 				look,check,inspect,search
 			</inputword>
 			<response>
-				A crippeld body is on top of it in such a bad state that
-				you cant
-				figure out
-				if it was human or not.
+				A crippeld body is on top of it in such a bad state that you cant
+				figure out if it was human or not.
 			</response>
 		</Interactions>
 	</Decoration>
@@ -62,7 +55,8 @@
 				person working here:
 				"log 3" east states ....
 				found it .. can now continue ....
-				"log 5" ... reality .. reveal ..
+				"log 5" ... i cant do this anymore...
+				"log 10"..  it has beend so long...
 				truth...
 				you need the password to get more data out of it
 			</response>
@@ -75,10 +69,8 @@
 			<response>
 				you enter the password for the pc and look up the missing
 				logs:
-				log 16: "he warned me. i didnt listen. he offers the truth but
-				the price
-				is to high"
-				log 17: "its just a game.. time to end it"
+				log 16: "he warned me. i didnt listen. he offers the truth but the price is to high"
+				log 17: "its just a game..but i cant win it"
 			</response>
 		</Interactions>
 	</Decoration>
@@ -92,13 +84,9 @@
 				look,check,inspect,search
 			</inputword>
 			<response>
-				Some photos of a man standing in many different places
-				around the world.
-				Befor the Piramids in keiro and in venedig. Some of
-				these photos are
-				still black white.
-				Strangly the person on the
-				pictures does not seem to age at all.
+				Some photos of a man standing in many different places around the world.
+				Befor the Piramids in keiro and in venedig. Some of these photos are still black white.
+				Strangly the person on the pictures does not seem to age at all.
 			</response>
 		</Interactions>
 	</Decoration>
@@ -113,8 +101,7 @@
 			</inputword>
 			<response>
 				A weird looking stone glowing slightly red. about 1m in
-				hight. You feel a strange Energy
-				comming from it.
+				hight. You feel a strange Energy emmiting from it.
 			</response>
 		</Interactions>
 		<Interactions>
@@ -123,13 +110,11 @@
 			</inputword>
 			<response>
 				As you touch the stone the red glow gets stronger. you see
-				the memories of an acient
-				civilisation passing trough you mind. You
-				see parts of the past and future.
-				It is almost as you would watch
-				trough the eyes of someone else.
-				With a bright light you get pushed
-				back. Your head hurts.
+				the memories of an acient civilisation passing trough you mind. 
+				You see parts of the past and future. It is almost as you would watch
+				trough the eyes of someone else. With a bright light you get pushed
+				back. 
+				Your head hurts.
 			</response>
 		</Interactions>
 		<Interactions>
@@ -152,8 +137,7 @@
 			</inputword>
 			<response>
 				A bloody mess of an corpse. You cant make out who it is nor if it was
-				even human.
-				A long scar is going over the stomache of the corpse.
+				even human. A long scar is going over the stomache of the corpse.
 			</response>
 		</Interactions>
 	</Decoration>

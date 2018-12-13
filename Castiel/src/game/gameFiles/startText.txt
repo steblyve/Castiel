@@ -2,3 +2,6 @@ You wake up in an room that looks familiar.
 your head hurts like hell. You do not remember what happend
 you feel like you have already been here but you dont quite remember why and when.
 i better look for help.
+
+tipp: try commands like "look around" or "look at desk", "check plant".
+ make sure the object you want to interact with is in the command.

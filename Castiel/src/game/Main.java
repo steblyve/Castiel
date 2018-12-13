@@ -21,6 +21,11 @@ public class Main {
 		castielRoomList.add("hallway");
 		castielRoomList.add("labor");
 		castielRoomList.add("security");
+		castielRoomList.add("ending1");
+		castielRoomList.add("ending2");
+		castielRoomList.add("outside");
+		castielRoomList.add("experimentChamber");
+		
 		String startTextFilePath = "/game/gameFiles/startText.txt";
 		String helpFilePath = "/game/gameFiles/help.txt";
 		String startMenuFilePath = "/game/gameFiles/startMenu.txt";

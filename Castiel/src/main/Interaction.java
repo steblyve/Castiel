@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * An interaction can be executed with an given input. is the input valid the
  * response its returned.
  * 
- * @author Yves
+ * @author Yves Stebler
  * @version 1.0
  */
 public class Interaction {

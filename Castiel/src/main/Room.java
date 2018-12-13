@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * the user when looking around and has an enter response which indicates which
  * response is needed to ENTER this room (make it active).
  * 
- * @author Yves
+ * @author Yves Stebler
  * @version 1.0
  */
 public class Room {
@@ -68,8 +68,8 @@ public class Room {
 	 * @return true if the room was entered with the given response.
 	 */
 	public Boolean enteredRoom(String response) {
-		if (response.replace("\n", "").replace("\t", "").replace("\r", "")
-				.equals(responseToEnterRoom.replace("\n", "").replace("\t", "").replace("\r", ""))) {
+		if (response.replace("\n", "").replace("\t", "").replace("\r", "").replace(" ", "")
+				.equals(responseToEnterRoom.replace("\n", "").replace("\t", "").replace("\r", "").replace(" ", ""))) {
 			return true;
 		}
 		return false;

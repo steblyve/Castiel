@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Parser to find an interactable from a given input.
  * 
- * @author Yves
+ * @author Yves Stebler
  * @version 1.0
  */
 public class ObjectParser {

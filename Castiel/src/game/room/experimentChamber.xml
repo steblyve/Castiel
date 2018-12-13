@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<room>
+	<EnterResponse>you enter the experiment chamber.</EnterResponse>
+	<Description>
+		The room is quite big. There are some strange things lying around. 
+		You see a door to the hallway at the back.
+		A computer is on a desk with a note next to it.
+		If you find this place again. Remember your goal.
+		Remember what you have to do.
+	</Description>
+
+	<Decoration>
+		<names>
+			desk,table
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search,go,move,walk
+			</inputword>
+			<response>
+				A wooden desk with fine metal carvings on the side. There
+				is a name written in it .... Mathew Smith. Same as the office.
+				A pistol is lying on it. an empty shell next to it.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				smash,destroy,break,kick,
+			</inputword>
+			<response>
+				You hit it. nothing happens.. what a shame.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				stand,climb,jump
+			</inputword>
+			<response>
+				I climb the desk. The air is nice up here but its not
+				helping at all so climb down again.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			note,paper,notice
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				Dont forget what you need to do...
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			computer,PC,pc
+		</names>
+		<Interactions>
+			<inputword>
+				smash,destroy,break
+			</inputword>
+			<response>
+				You hit it. nothing happens.. what a shame.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				throw
+			</inputword>
+			<response>
+				that would bring nothing good.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search,loggin,log,log-into,start,turnon,turn-on,on
+			</inputword>
+			<response>
+				You turn on the computer.
+				As soon as you start it a video opens.
+				It is your own face you see in the video.
+				
+				"So you hav finaly found this place ?"
+				"or should i say again ?"
+				"The cycle needs to END"
+				"Break the cycle... i failed to"
+				
+				You see yourself taking a gun to the head and shoot.
+				The recording ends. 
+				The gun is still on the desk but no blood.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Decoration>
+		<names>
+			gun,pistol,weapon,shoot,kill,myself,kill
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				It lies on the desk.
+			</response>
+		</Interactions>
+			<Interactions>
+			<inputword>
+				get,pick-up,pick,take
+			</inputword>
+			<response>
+				I dont need to carry a gun. Unless i want to shoot myself.
+			</response>
+		</Interactions>
+			<Interactions>
+			<inputword>
+				shoot myself,head,shoot me, shoot in head,kill,die,shoot yourslef,
+			</inputword>
+			<response>
+				You put the gun to your head.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Door>
+		<names>
+			door,hallway
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				An stable wooden door. Like the table it has metal carvings
+				on the sides.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				break,destroy,kick,hit
+			</inputword>
+			<response>
+				It does not move an inch. yeah fuck the metric system i know
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open
+			</inputword>
+			<response>
+				you walk outside into the Hallway.
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+				unlock,open
+			</inputword>
+			<response>
+				you use the key to unlock the door
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+			The Door does not open. Seems to be locked. I need to
+			find another way or get the key.
+		</NoKeyResponse>
+		<KeyID>
+			hallwayKey
+		</KeyID>
+	</Door>
+</room>

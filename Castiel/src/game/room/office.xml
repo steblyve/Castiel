@@ -4,14 +4,10 @@
 	<Description>
 		You are in an office.
 		There is a table in the middle.
-		In the
-		corner there is an office plant and at the wall there is a
-		book-shelf.
+		In the corner there is an office plant and at the wall there is a book-shelf.
 		There is only one door at the end of the room behind the table
-		Some
-		sunlight comes into the room trough two windows
-		The light is slightly
-		red.
+		Some sunlight comes into the room trough the window
+		The light is slightly red.
 	</Description>
 
 	<Decoration>
@@ -24,9 +20,9 @@
 			</inputword>
 			<response>
 				A wooden desk with fine metal carvings on the side. There
-				is a name written in it Mathew Smith
-				sounds familiar The desk has a
-				locked drawer. On top there is a framed picture and some documents
+				is a name written in it .... Mathew Smith ... sounds familiar 
+				The desk has a locked drawer. 
+				On top there is a framed picture and some documents
 			</response>
 		</Interactions>
 		<Interactions>
@@ -151,10 +147,8 @@
 				look,check,inspect,search
 			</inputword>
 			<response>
-				"The destruction of babel" documentation of an old
-				civilisation.
-				"Old Britania stories" fables and stories from old
-				England.
+				"The destruction of babel" documentation of an old civilisation.
+				"Old Britania stories" fables and stories from old England.
 				"The Black Knight" nothing but a scratch
 			</response>
 		</Interactions>
@@ -170,31 +164,18 @@
 			</inputword>
 			<response>
 				The acient civilization of Bable is well known for there
-				atempt to reach heaven
-				by building a tower higher than any
-				other.Acording to the Bible the
-				tower was an
-				statement from the humans
-				to god that they want to reach his greatnes by
-				reaching
-				heaven
-				themself. God saw th faith of the humans in danger and brought
-				destruction
-				over the people as a grim reminder of to the people. The
-				tower broke
-				down and god
-				createt language. The acient civilisations
-				could not communicate with each
-				other
-				and so they parted ways with no
+				atempt to reach heaven by building a tower higher than any
+				other.Acording to the Bible the tower was an statement from the humans
+				to god that they want to reach his greatnes by reaching
+				heaven themself. God saw the faith of the humans in danger and brought
+				destruction over the people as a grim reminder of who they where. The
+				tower broke down and god createted different languages. The acient civilisations
+				could not communicate with each other and so they parted ways with no
 				means to rebuild the tower ever again.
 				Parts of the mentioned tower
-				where found in east european country
-				indicating
-				that the tower really
-				existet. But not close to as high as descripted in
+				where found in east european country indicating
+				that the tower really existet. But not close to as high as descripted in
 				the bible.
-				Strange.Some pages seem to be missing.
 			</response>
 		</Interactions>
 	</Decoration>
@@ -209,8 +190,7 @@
 			</inputword>
 			<response>
 				King arthur holder of excalibure and truet heighr to the
-				thrown of
-				Britania road
+				thrown of Britania road
 				allongside his Knights inside battle. He
 				fought Battle over Battle to conquer
 				the Land and unite the people
@@ -233,8 +213,7 @@
 			</inputword>
 			<response>
 				The black kinght cant be defeated by any means then he is
-				indeed
-				imortal and any
+				indeed imortal and any
 				wound given to him is nothing but a fleshwound.
 			</response>
 		</Interactions>
@@ -270,7 +249,7 @@
 
 	<Door>
 		<names>
-			door,hallway,back
+			door,hallway
 		</names>
 		<Interactions>
 			<inputword>
@@ -363,12 +342,9 @@
 			</inputword>
 			<response>
 				You look outsie the window. No human to be seen. Everything
-				looks empty
-				and abadoned.
+				looks empty and abadoned.
 				You see some trees and far away you spot a
-				litle town connected to your
-				building
-				by a singel road.
+				litle town connected to your building by a singel road.
 			</response>
 		</Interactions>
 		<Interactions>
@@ -399,7 +375,7 @@
 			The window is locked. I cant open it.
 		</NoKeyResponse>
 		<KeyID>
-			officeKey
+			windowKey
 		</KeyID>
 	</Door>
 	

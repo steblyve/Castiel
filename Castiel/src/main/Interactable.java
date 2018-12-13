@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * A Interactable can check if a key is in the inventory of the user and also
  * has a method to test all general interactions with a given user input.
  * 
- * @author Yves
+ * @author Yves Stebler
  * @version 1.0
  */
 public abstract class Interactable {

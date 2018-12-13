@@ -4,27 +4,25 @@
 		You open the door to the security room.
 	</EnterResponse>
 	<Description>
-		It is a small chamber with a chair and some monitors with
-		camera footage on them.
-		I the back there is also a shelf with some keys
-		in it.
+		It is a small chamber with a chair and some monitors with camera footage on them.
+		I the back there is also a shelf with some keys in it.
 	</Description>
 
 	<Container>
 		<names>
-			shelf,keys
+			shelf,keys,key-shelf
 		</names>
 		<Interactions>
 			<inputword>
 				look,check,inspect,search
 			</inputword>
 			<response>
-				only one key is left. The key for the entrance door.
+				Some keys are in it. One of them has the sign "entrance" on it.
 			</response>
 		</Interactions>
 		<GetItemInteraction>
 			<inputword>
-				get key,get,open,take,
+				get key,get,open,take,search
 			</inputword>
 			<response>
 				you obtained the entrance key.
@@ -41,7 +39,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,walk
 			</inputword>
 			<response>
 				You check the old security recordings of the System. You see people walking in and out. 

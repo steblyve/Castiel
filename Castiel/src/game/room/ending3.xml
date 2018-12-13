@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<room>
+	<EnterResponse> 
+	You feel the wind in your face as you fall down.
+	</EnterResponse>
+	<Description>
+		While you are falling you realize what you have just done.
+		Why would you do this? 
+		Was it even you?
+		Or is someone controling you this whole time.
+		With this last toughts you hit the ground and enter the darkness.	
+		
+		
+		
+		
+		
+		Congratulation you found the third ending.
+		To start a new game write: new game.
+	</Description>
+</room>

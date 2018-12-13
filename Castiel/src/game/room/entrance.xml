@@ -3,17 +3,11 @@
 	<EnterResponse>You walk to the entrace.
 	</EnterResponse>
 	<Description>
-		You are in the entrance Area of the Building. A double
-		door is leading outside.
-		There is a monitor displaying "Physic
-		Institute GSTER"
+		You are in the entrance Area of the Building. A double door is leading outside.
+		There is a monitor displaying "Physic Institute GSTER"
 		No one is around.
-		There is another door probably leading
-		into the basement.
-		Another door is behind the entrance desk with the
-		label "security" on it.
-		In the middle of the room there is also an
-		entrance desk.
+		Another door is behind the entrance desk with the label "security" on it.
+		In the middle of the room there is also an desk.
 	</Description>
 
 	<Decoration>
@@ -62,16 +56,10 @@
 			</inputword>
 			<response>
 				you log into the PC and check the files.
-				Some files are
-				formulars for deliveries made to this Institute.
-				Old stuff
-				from all
-				over the world got deliverd here.
-				You check the list of professors
-				from this university and
-				find your own face in it.
-				It seems you have
-				worked here. But why dont you have any memory of it?
+				Some files are for deliveries made to this Institute.
+				Old stuff from all over the world got deliverd here.
+				You check the list of professors from this university and find your own face in it.
+				It seems you have worked here. But why dont you have any memory of it?
 			</response>
 		</Interactions>
 	</Decoration>
@@ -136,8 +124,7 @@
 			</response>
 		</UnlockInteraction>
 		<NoKeyResponse>
-			the door is locked... you didnt think it would be so
-			easy right? ;)
+			the door is locked... you didnt think it would be so easy right? ;)
 		</NoKeyResponse>
 		<KeyID>
 			entranceKey

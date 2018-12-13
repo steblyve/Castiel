@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<room>
+	<EnterResponse>You climb trough the window. its cold outside.
+	</EnterResponse>
+	<Description>
+		You stand on the small edge at the window.
+		The wind iscold.
+		On your left there is another window leading into the experiment room.
+	</Description>
+
+	<Decoration>
+		<names>
+			down,ground,death,dead,jump,fall
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect
+			</inputword>
+			<response>
+				you look down the edge. You are quit high up.
+				Dont think it is a good idea to jump.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				jump,fall,suicide,death,walk,go
+			</inputword>
+			<response>
+				You feel the wind in your face as you fall down.
+			</response>
+		</Interactions>
+	</Decoration>
+
+	<Door>
+		<names>
+			other-window,experiment,experimentroom,experiment-room
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				A open window.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				break,destroy,kick,hit
+			</inputword>
+			<response>
+				why? it is open.
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open,climb,trough
+			</inputword>
+			<response>
+				you enter the experiment chamber.
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+			</inputword>
+			<response>
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+		</NoKeyResponse>
+		<KeyID>
+		</KeyID>
+	</Door>
+
+	<Door>
+		<names>
+			office,officeroom,office-room,start
+		</names>
+		<Interactions>
+			<inputword>
+				look,check,inspect,search
+			</inputword>
+			<response>
+				A open window.
+			</response>
+		</Interactions>
+		<Interactions>
+			<inputword>
+				break,destroy,kick,hit
+			</inputword>
+			<response>
+				why? it is open.
+			</response>
+		</Interactions>
+		<PassInteraction>
+			<inputword>
+				pass,use,walk,go,open,climb,trough
+			</inputword>
+			<response>
+				You walk inside the office.
+			</response>
+		</PassInteraction>
+		<UnlockInteraction>
+			<inputword>
+			</inputword>
+			<response>
+			</response>
+		</UnlockInteraction>
+		<NoKeyResponse>
+		</NoKeyResponse>
+		<KeyID>
+		</KeyID>
+	</Door>
+
+</room>
