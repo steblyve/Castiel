@@ -50,7 +50,6 @@ class GameBuilderTest {
 		assertTrue(exception instanceof GameBuildingException);
 	}
 
-	
 	@Test
 	void CreateLevelTest_BuildTestLevel_DecorationBuildCorrectly() throws GameBuildingException {
 		String expectedResponseTest = "testResponse";

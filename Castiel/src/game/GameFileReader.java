@@ -8,7 +8,7 @@ import game.exceptions.FileReadingException;
 
 /**
  * This class is able to read text Files and XML Files for the game.
- * @author Yves
+ * @author Yves Stebler
  * @version 1.0
  */
 public class GameFileReader {

@@ -21,23 +21,31 @@ class RoomTest {
 	private String lookAtDeskResponse = "a desk with a drawer";
 	private String destroyDeskResponse = "you want to destroy it with bare hands?";
 	private ArrayList<Item> inventory = new ArrayList<>();
-	private ArrayList<String> possibleLookingInput = new ArrayList<String>() {{
-		add("look");
-		add("check");
-	}};
-	private ArrayList<String> possibleDestroyingInput = new ArrayList<String>() {{
-		add("destroy");
-		add("kick");
-	}};
-	private ArrayList<String> deskNames = new ArrayList<String>() {{
-		add("desk");
-		add("table");
-	}};
-	private ArrayList<String> pictureNames = new ArrayList<String>() {{
-		add("picture");
-		add("painting");
-	}};
-	
+	private ArrayList<String> possibleLookingInput = new ArrayList<String>() {
+		{
+			add("look");
+			add("check");
+		}
+	};
+	private ArrayList<String> possibleDestroyingInput = new ArrayList<String>() {
+		{
+			add("destroy");
+			add("kick");
+		}
+	};
+	private ArrayList<String> deskNames = new ArrayList<String>() {
+		{
+			add("desk");
+			add("table");
+		}
+	};
+	private ArrayList<String> pictureNames = new ArrayList<String>() {
+		{
+			add("picture");
+			add("painting");
+		}
+	};
+
 	@BeforeEach
 	void setup() {
 		Interaction lookAtPictureInteraction = new Interaction(lookAtPictureResponse, possibleLookingInput);
@@ -50,19 +58,19 @@ class RoomTest {
 		ArrayList<Interaction> pictureInteraction = new ArrayList<>();
 		pictureInteraction.add(lookAtPictureInteraction);
 		Decoration picture = new Decoration(pictureNames, pictureInteraction);
-		
+
 		ArrayList<Interactable> objectsInRoom = new ArrayList<>();
 		objectsInRoom.add(picture);
 		objectsInRoom.add(desk);
 		office = new Room(objectsInRoom, description, "enter room response");
 	}
-	
+
 	@Test
 	void interactTest_lookAtPicture() {
 		String response = office.interact("look at picture", inventory);
 		assertTrue(response.equals(lookAtPictureResponse));
 	}
-	
+
 	@Test
 	void interactTest_lookAtDesk() {
 		String response = office.interact("look at desk", inventory);

@@ -20,7 +20,7 @@ import main.Container.Builder;
 /**
  * The GameBuilder can create a Level with the names of the rooms
  * 
- * @author Yves
+ * @author Yves Stebler
  * @version 1.0
  * 
  */
@@ -157,7 +157,8 @@ public class GameBuilder {
 
 	/**
 	 * Creates a interaction of a given type.
-	 * @param eElement Xml element containing Interaction
+	 * 
+	 * @param eElement        Xml element containing Interaction
 	 * @param interactionType type of the interaction that should be created
 	 * @return returns the created interaction.
 	 */
@@ -180,8 +181,9 @@ public class GameBuilder {
 	}
 
 	/**
-	 * creates all general interactions (KeyWord Interaction) from a nodeList 
-	 * and puts them into a list.
+	 * creates all general interactions (KeyWord Interaction) from a nodeList and
+	 * puts them into a list.
+	 * 
 	 * @param interactions NodeList containing all interactions
 	 * @return list of all general Interactions of a given NodeList
 	 */
@@ -190,7 +192,8 @@ public class GameBuilder {
 		for (int i = 0; i < interactions.getLength(); i++) {
 			Node interaction = interactions.item(i);
 			Element action = (Element) interaction;
-			String response = cleanResponses(action.getElementsByTagName(XmlKeyWords.response).item(0).getTextContent());
+			String response = cleanResponses(
+					action.getElementsByTagName(XmlKeyWords.response).item(0).getTextContent());
 			ArrayList<String> possibleWords = toArrayList(
 					action.getElementsByTagName(XmlKeyWords.inputWord).item(0).getTextContent().split(","));
 			allInteractions.add(new Interaction(response, possibleWords));
@@ -199,14 +202,15 @@ public class GameBuilder {
 	}
 
 	/**
-	 * Creates an Item of a given type from a XML element. 
-	 * @param element 	xml element containing the Item
-	 * @param identification	the type of the item zBs. "KeyID"
+	 * Creates an Item of a given type from a XML element.
+	 * 
+	 * @param element        xml element containing the Item
+	 * @param identification the type of the item zBs. "KeyID"
 	 * @return
 	 */
 	private Item createItemOfElement(Element element, String identification) {
 		Item item = new Item(cleanString(element.getElementsByTagName(identification).item(0).getTextContent()), null);
-		if (!isEmptyField(item.description)) {
+		if (!isEmptyField(item.getDescription())) {
 			return item;
 		}
 		return null;
@@ -214,8 +218,9 @@ public class GameBuilder {
 
 	/**
 	 * checks if a field contains anything else than tabs linebreaks etc.
-	 * @param fieldContent  String to be tested
-	 * @return	true if field is empty
+	 * 
+	 * @param fieldContent String to be tested
+	 * @return true if field is empty
 	 */
 	private boolean isEmptyField(String fieldContent) {
 		fieldContent = cleanString(fieldContent);
@@ -227,8 +232,9 @@ public class GameBuilder {
 
 	/**
 	 * creates a Arraylist from a String array.
-	 * @param array	 to be converted
-	 * @return	returns a arraylist created from the array
+	 * 
+	 * @param array to be converted
+	 * @return returns a arraylist created from the array
 	 */
 	private ArrayList<String> toArrayList(String[] array) {
 		ArrayList<String> list = new ArrayList<>();
@@ -241,29 +247,31 @@ public class GameBuilder {
 
 	/**
 	 * cleans a string of noise charakters (/n,/t,/r)
+	 * 
 	 * @param string to be tested
-	 * @return	cleaned string
+	 * @return cleaned string
 	 */
 	private String cleanString(String string) {
 		return string.replace("\t", "").replace("\n", "").replace("\r", "");
 	}
 
 	/**
-	 * cleans a string of noise charakters (/t,/r)
-	 * note: /n is needed in the visual responses presented to 
-	 * the user herbay this method is needed additionaly
+	 * cleans a string of noise charakters (/t,/r) note: /n is needed in the visual
+	 * responses presented to the user herbay this method is needed additionaly
+	 * 
 	 * @param response to be cleaned
-	 * @return	cleaned response.
+	 * @return cleaned response.
 	 */
 	private String cleanResponses(String response) {
 		return response.replace("\t", "").replace("\r", "");
 	}
 
 	/**
-	 * This class contains all used XmlKeyWords which are not used in Enums. 
-	 * In case of changes in the XML structure the user only needs to adjust these 
-	 * values hence having a easier time updating the code.
-	 * Get methods where not added since the class is seen as a Datastructure (Clean Code)
+	 * This class contains all used XmlKeyWords which are not used in Enums. In case
+	 * of changes in the XML structure the user only needs to adjust these values
+	 * hence having a easier time updating the code. Get methods where not added
+	 * since the class is seen as a Datastructure (Clean Code)
+	 * 
 	 * @author Yves
 	 * @version 1.0
 	 */

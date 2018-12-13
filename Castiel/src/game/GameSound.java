@@ -1,20 +1,18 @@
 package game;
 
-import java.io.IOException;
 import java.io.InputStream;
 
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
 
 /**
  * Manager for the gamesound. Can play a writing sound and also start a RoomSound.
- * @author Yves
+ * @author Yves Stebler
  * @version 1.0
  */
-public class gameSound {
+public class GameSound {
 
 	private Clip writingclip;
 	
@@ -24,13 +22,13 @@ public class gameSound {
 	 * Constructor creating Clips for further use.
 	 * @throws LineUnavailableException
 	 */
-	public gameSound() throws LineUnavailableException {
+	public GameSound() throws LineUnavailableException {
 		writingclip = AudioSystem.getClip();
 		roomClip = AudioSystem.getClip();
 	}
 
 	/**
-	 * 
+	 * plays a adioclip with a writing sound.
 	 * @throws Exception
 	 */
 	public void playWritingSound() throws Exception {
@@ -44,8 +42,8 @@ public class gameSound {
 	}
 
 	/**
-	 * 
-	 * @param path
+	 * plays a aoundfile from the given path. Only works with .wac files
+	 * @param path	audio file path example: /game/gameFiles/file.wav
 	 * @throws Exception
 	 */
 	public void startRoomSound(String path) throws Exception {

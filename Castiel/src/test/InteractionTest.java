@@ -10,23 +10,25 @@ import org.junit.jupiter.api.Test;
 import main.Interaction;
 
 class InteractionTest {
-	
+
 	Interaction interaction;
 	String expectedResponse = "expectedResponse";
-	ArrayList<String> possibleCommands =  new ArrayList<String>() {{
-		add("test");
-		add("testing");
-	}};
-	
-    @BeforeEach
+	ArrayList<String> possibleCommands = new ArrayList<String>() {
+		{
+			add("test");
+			add("testing");
+		}
+	};
+
+	@BeforeEach
 	void setup() {
 		interaction = new Interaction(expectedResponse, possibleCommands);
 	}
-	
+
 	@Test
-	void executeTest_validInput_EmptyString() {		
+	void executeTest_validInput_EmptyString() {
 		String input = "test";
-		String response = interaction.execute(input);	
+		String response = interaction.execute(input);
 		assertTrue(response.equals(expectedResponse));
 	}
 
