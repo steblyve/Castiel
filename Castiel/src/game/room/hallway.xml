@@ -191,12 +191,15 @@
 				pass,use,walk,go,open
 			</inputword>
 			<response>
+			You walk inside the experminet chamber
 			</response>
 		</PassInteraction>
 		<UnlockInteraction>
 			<inputword>
+			unlock,open
 			</inputword>
 			<response>
+			you unlock the door
 			</response>
 		</UnlockInteraction>
 		<NoKeyResponse>
