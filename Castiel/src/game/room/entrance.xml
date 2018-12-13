@@ -16,7 +16,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				"Physic Institute GSTER" hmm sounds familiar.
@@ -30,7 +30,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				A normal Desk.A PC is on it.
@@ -40,11 +40,11 @@
 
 	<Decoration>
 		<names>
-			PC,Computer
+			PC,Computer,pc,desktop,Pc
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk,start,turn,on,turn-on
 			</inputword>
 			<response>
 				I need a password to log in..
@@ -66,7 +66,7 @@
 
 	<Door>
 		<names>
-			stairs,hallway,upstairs,
+			stairs,hallway,upstairs
 		</names>
 		<Interactions>
 			<inputword>
@@ -129,39 +129,6 @@
 		<KeyID>
 			entranceKey
 		</KeyID>
-	</Door>
-
-	<Door>
-		<names>
-			basement,cellar
-		</names>
-		<Interactions>
-			<inputword>
-				look,check,inspect,search
-			</inputword>
-			<response>
-				old fashioned door leading into the basement.
-			</response>
-		</Interactions>
-		<PassInteraction>
-			<inputword>
-				pass,use,walk,go,open
-			</inputword>
-			<response>
-				You walk into the dark of the basement.
-			</response>
-		</PassInteraction>
-		<UnlockInteraction>
-			<inputword>
-			</inputword>
-			<response>
-			</response>
-		</UnlockInteraction>
-		<NoKeyResponse>
-		</NoKeyResponse>
-		<KeyID>
-		</KeyID>
-
 	</Door>
 		<Door>
 		<names>

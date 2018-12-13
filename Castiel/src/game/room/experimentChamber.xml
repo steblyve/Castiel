@@ -25,7 +25,7 @@
 		</Interactions>
 		<Interactions>
 			<inputword>
-				smash,destroy,break,kick,
+				smash,destroy,break,kick
 			</inputword>
 			<response>
 				You hit it. nothing happens.. what a shame.
@@ -48,7 +48,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				Dont forget what you need to do...
@@ -62,7 +62,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				smash,destroy,break
+				smash,destroy,break,go,move,walk
 			</inputword>
 			<response>
 				You hit it. nothing happens.. what a shame.

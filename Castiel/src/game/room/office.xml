@@ -90,7 +90,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				"You search the papers on top of the desk."
@@ -109,7 +109,7 @@
 
 	<Decoration>
 		<names>
-			bookshelf,shelf
+			bookshelf,shelf,book-shelf
 		</names>
 		<Interactions>
 			<inputword>
@@ -144,7 +144,7 @@
 		</Interactions>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				"The destruction of babel" documentation of an old civilisation.

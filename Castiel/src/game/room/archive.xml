@@ -78,7 +78,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				a simple Drawer.

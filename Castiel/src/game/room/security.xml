@@ -14,7 +14,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				Some keys are in it. One of them has the sign "entrance" on it.
@@ -55,7 +55,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				Its a god damn chair. Nothing else.

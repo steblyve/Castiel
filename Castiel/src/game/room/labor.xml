@@ -8,7 +8,7 @@
 		The room has no windows nor Doors. It is a surgery room with a surgery table in the middle.
 		A body is on the table.
 		At the end of the Room there is a PC mounted on a wall.
-		At the side there is a shelf.
+		At the side there is a shelf and next to it a big stone with carvings on it
 	</Description>
 
 	<Decoration>
@@ -17,7 +17,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				A crippeld body is on top of it in such a bad state that you cant
@@ -32,7 +32,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				Some surgery documents are in the shelf.
@@ -42,11 +42,11 @@
 
 	<Decoration>
 		<names>
-			pc,computer
+			pc,computer,PC,Pc
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				You log into the PC and search for anything usefull. You
@@ -81,7 +81,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				Some photos of a man standing in many different places around the world.
@@ -97,7 +97,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				A weird looking stone glowing slightly red. about 1m in
@@ -133,7 +133,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				A bloody mess of an corpse. You cant make out who it is nor if it was
@@ -148,7 +148,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				An stable wooden door.

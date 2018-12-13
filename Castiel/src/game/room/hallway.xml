@@ -17,7 +17,7 @@
 		</names>
 		<Interactions>
 			<inputword>
-				look,check,inspect,search
+				look,check,inspect,search,go,move,walk
 			</inputword>
 			<response>
 				you look inside the mirror. For just a second you tought you saw someone behind you.
